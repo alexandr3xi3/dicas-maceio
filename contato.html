@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Dicas Maceió</title>
+    
+    <meta name="description" content="Entre em contato com a equipe do Dicas Maceió para dúvidas, sugestões ou parcerias comerciais.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://seusitedicasmaceio.com.br/contato.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contato | Dicas Maceió">
+    <meta property="og:description" content="Entre em contato com a equipe do Dicas Maceió.">
+    <meta property="og:url" content="https://seusitedicasmaceio.com.br/contato.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Estilos do Formulário */
+        .form-container { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        .form-label { font-weight: 500; }
+        .form-input { padding: 0.8rem; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(15, 23, 42, 0.8); color: var(--text-main); font-family: inherit; }
+        .form-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2); }
+        .form-button { background: var(--accent); color: #0f172a; border: none; padding: 1rem; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: opacity 0.3s; }
+        .form-button:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Menu Principal">
+            <a href="index.html" class="logo" aria-label="Página Inicial"><strong>Dicas</strong>Maceió</a>
+            
+            <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu-links" aria-label="Abrir menu de navegação">
+                ☰
+            </button>
+            
+            <ul id="menu-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artigo-gastronomia.html">Gastronomia</a></li>
+                <li><a href="artigo-centro.html">Centro e Cultura</a></li>
+                <li><a href="artigo-roteiros.html">Roteiros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-article">
+        <h1 style="color: var(--accent); font-size: 3rem; margin-top: 1rem; letter-spacing: -1px;">Fale Conosco</h1>
+        <p style="font-size: 1.125rem; color: #cbd5e1;">Tem alguma dúvida, sugestão de pauta ou interesse em parcerias comerciais? Entre em contato através do formulário abaixo ou pelo nosso e-mail direto: <strong>contato@dicasmaceio.com.br</strong></p>
+        
+        <form action="#" method="POST" class="form-container">
+            
+            <div class="form-group">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" name="email" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem" class="form-label">Sua Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required class="form-input" style="resize: vertical;"></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Enviar Mensagem</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dicas Maceió. Todos os direitos reservados.</p>
+        <nav class="legal-links" aria-label="Links Legais">
+            <a href="sobre.html">Sobre o Projeto</a>
+            <a href="contato.html" aria-current="page">Contato</a>
+            <a href="privacidade.html">Política de Privacidade</a>
+            <a href="termos.html">Termos de Uso</a>
+        </nav>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-msg">
+        <p id="cookie-msg">
+            Usamos cookies para personalizar anúncios e melhorar sua experiência. Ao continuar navegando, você concorda com a nossa <a href="privacidade.html">Política de Privacidade</a>.
+        </p>
+        <button id="btn-accept-cookies" class="btn-accept">Aceitar e Fechar</button>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
